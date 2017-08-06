@@ -1,0 +1,28 @@
+.calculator {
+  display: flex;
+  flex-wrap: wrap;
+  width: 404px;
+  height: 500px;
+  cursor: pointer;
+}
+
+span {
+  height: 67px;
+  width: 99px;
+  background-color: #32AD2F;
+  color: #F1F8F1;
+  text-align: center;
+  padding-top: 33px;
+  font-size: 33px;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  border: solid 1px #8DD08D;
+}
+
+#display {
+  width: 301px;
+}
+
+.operator {
+  background-color: #5CBD5A;
+  color: #274E24;
+}
