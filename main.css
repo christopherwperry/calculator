@@ -9,12 +9,13 @@
 span {
   height: 67px;
   width: 99px;
-  background-color: #32AD2F;
+  background-color: #38AB36;
   color: #F1F8F1;
   text-align: center;
-  padding-top: 33px;
-  font-size: 33px;
-  font-family: 'Saira Semi Condensed', sans-serif;
+  padding-top: 31px;
+  font-size: 31px;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: lighter;
   border: solid 1px #8DD08D;
 }
 
@@ -22,7 +23,15 @@ span {
   width: 301px;
 }
 
+#clear:hover, #equals:hover {
+  background-color: #5CBD5A;
+}
+
 .operator {
   background-color: #5CBD5A;
   color: #274E24;
+}
+
+.operator:hover {
+  color: #F1F8F1;
 }
