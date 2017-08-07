@@ -1,26 +1,29 @@
-.calculator {
+
+form {
   display: flex;
   flex-wrap: wrap;
-  width: 404px;
-  height: 500px;
+  width: 40vw;
+  height: 50vw;
+  margin-right: 30vw;
+  margin-left: 28vw;
+  margin-top: 2vw;
   cursor: pointer;
 }
 
-span {
-  height: 67px;
-  width: 99px;
+input {
+  height: 10vw;
+  width: 10vw;
   background-color: #38AB36;
   color: #F1F8F1;
   text-align: center;
-  padding-top: 31px;
-  font-size: 31px;
+  font-size: 3vw;
   font-family: 'Noto Sans', sans-serif;
   font-weight: lighter;
   border: solid 1px #8DD08D;
 }
 
 #display {
-  width: 301px;
+  width: 30vw;
 }
 
 #clear:hover, #equals:hover {
