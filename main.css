@@ -1,5 +1,5 @@
 
-form {
+.calculator {
   display: flex;
   flex-wrap: wrap;
   width: 40vw;
@@ -7,7 +7,6 @@ form {
   margin-right: 30vw;
   margin-left: 28vw;
   margin-top: 2vw;
-  cursor: pointer;
 }
 
 input {
@@ -17,13 +16,21 @@ input {
   color: #F1F8F1;
   text-align: center;
   font-size: 3vw;
-  font-family: 'Noto Sans', sans-serif;
   font-weight: lighter;
   border: solid 1px #8DD08D;
+  cursor: pointer;
 }
 
 #display {
+  background-color: #38AB36;
+  color: #F1F8F1;
+  text-align: right;
+  font-size: 4vw;
+  font-weight: lighter;
+  cursor: pointer;
   width: 30vw;
+  padding-top: 2.5vw;
+  font-family: system-ui;
 }
 
 #clear:hover, #equals:hover {
