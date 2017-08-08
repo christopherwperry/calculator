@@ -31,54 +31,24 @@ document.getElementById("decimal").addEventListener("click",function() {
         }
   },false);
 
-
-    /*
-    document.querySelector("#eqn-bg").addEventListener("click",function() {
-
-      if(display.innerHTML === output) {
-
-        display.innerHTML = eval(output);
-      }
-
-      else {
-            display.innerHTML = "";
-      }
-
-    },false);
-
- document.querySelector("#delete").addEventListener("click",function() {
-
+document.querySelector("#equals").addEventListener("click",function() {
+  if(display.innerHTML === output) {
+    display.innerHTML = eval(output);
+    } else {
         display.innerHTML = "";
-
-    },false);
-
-
-     var elem1 = document.querySelectorAll(".operator");
-
-      var len1 = elem1.length;
-
-      for(var i = 0; i < len1; i++ ) {
-
-        elem1[i].addEventListener("click",function() {
-
-        operator = this.value;
-
-         if(display.innerHTML === "") {
-
-            display.innerHTML = display.innerHTML.concat("");
-
-        }
-
-        else if(output) {
-
-            display.innerHTML = output.concat(operator);
-
-        }
-
-    },false);
-
-
-
       }
-}
-    */
+    },false);
+
+document.getElementById("clear").addEventListener("click",function() {
+  display.innerHTML = "";
+  },false);
+
+for(var i = 0; i < operators.length; i++ ) {
+  operators[i].addEventListener("click",function() {
+      if(display.innerHTML === "") {
+        display.innerHTML = display.innerHTML.concat("");
+      } else if(output) {
+          display.innerHTML = output.concat(this.value);
+        }
+      },false);
+    };
