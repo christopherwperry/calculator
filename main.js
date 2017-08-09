@@ -52,3 +52,11 @@ for(var i = 0; i < operators.length; i++ ) {
         }
       },false);
     };
+
+document.getElementById("multiply").addEventListener("click", function(){
+  if(display.innerHTML === "") {
+    display.innerHTML = display.innerHTML.concat("");
+  } else if(output) {
+      display.innerHTML = output.concat("*");
+    }
+  },false);

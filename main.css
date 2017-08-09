@@ -1,3 +1,9 @@
+body {
+  background-color: #6b6b6b;
+  background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+}
+
+
 
 .calculator {
   display: flex;
@@ -7,41 +13,57 @@
   margin-right: 30vw;
   margin-left: 28vw;
   margin-top: 2vw;
+  border: solid 1px #d9ecff;
 }
 
 input {
   height: 10vw;
   width: 10vw;
-  background-color: #38AB36;
-  color: #F1F8F1;
+  background:
+  linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+  color: #d9ecff;
   text-align: center;
   font-size: 3vw;
   font-weight: lighter;
-  border: solid 1px #8DD08D;
+  border: solid 1px #d9ecff;
   cursor: pointer;
 }
 
 #display {
-  background-color: #38AB36;
-  color: #F1F8F1;
+  background:
+  linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+  linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+  linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+  linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+  linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+  linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+  background-color: #131313;
+  background-size: 20px 20px;
+  color: #d9ecff;
   text-align: right;
   font-size: 4vw;
   font-weight: lighter;
   cursor: pointer;
-  width: 30vw;
+  width: 28.8vw;
   padding-top: 2.5vw;
   font-family: system-ui;
+  padding-right: 1vw;
+  border: solid 1px #d9ecff;
 }
 
-#clear:hover, #equals:hover {
-  background-color: #5CBD5A;
+#clear:hover, #equals:hover, .operator, #multiply {
+  background-color: #a3a6a4;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-dark.png");
+  color: #000000;
 }
 
-.operator {
-  background-color: #5CBD5A;
-  color: #274E24;
-}
-
-.operator:hover {
-  color: #F1F8F1;
+.operator:hover, #multiply:hover {
+  color: #000000;
 }
