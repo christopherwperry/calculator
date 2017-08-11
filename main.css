@@ -3,17 +3,12 @@ body {
   background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
 }
 
-
-
 .calculator {
   display: flex;
   flex-wrap: wrap;
-  width: 40vw;
-  height: 50vw;
   margin-right: 30vw;
   margin-left: 28vw;
   margin-top: 2vw;
-  border: solid 1px #d9ecff;
 }
 
 input {
@@ -56,6 +51,9 @@ input {
   font-family: system-ui;
   padding-right: 1vw;
   border: solid 1px #d9ecff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 #clear:hover, #equals:hover, .operator, #multiply {
